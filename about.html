@@ -21,10 +21,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Aria Lakier</title>
-<meta name="description" content="Learn about Aria Lakier — a young emerging artist, Interlochen Arts Camp attendee, and creative explorer.">
+<meta name="description" content="Learn about Aria Lakier — a young artist, Interlochen Arts Camp attendee, and creative explorer.">
 
 <!-- Fonts -->
-<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,400i,500&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./base.css">
 <link rel="stylesheet" href="./style.css">
@@ -57,15 +57,14 @@
         
         <!-- Artist Photo -->
         <div class="about-hero__image reveal">
-          <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--color-surface-offset);">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-faint)" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.87 3.13-7 7-7s7 3.13 7 7"/></svg>
-          </div>
+          <img src="./assets/about-atmosphere.png" alt="Atmospheric artist workspace" loading="lazy">
         </div>
 
         <!-- Bio Content -->
         <div class="about-hero__content reveal">
           <p class="section__eyebrow">About</p>
           <h1>Artist Statement</h1>
+          <hr class="gold-rule">
           
           <p>I'm Aria Lakier, a young artist who believes that every mark on paper is a conversation with the world. Art isn't just something I do — it's how I think, how I process, and how I connect with the things that matter to me.</p>
 
@@ -81,11 +80,17 @@
     </div>
   </section>
 
+  <!-- Blossom Divider -->
+  <div class="section-divider">
+    <img src="./assets/blossom-divider.png" alt="" loading="lazy">
+  </div>
+
   <!-- Experience Timeline -->
   <section class="section timeline" style="background: var(--color-surface-2);">
     <div class="container">
       <p class="section__eyebrow reveal">Journey</p>
       <h2 class="section__title reveal">Artistic Experience</h2>
+      <hr class="gold-rule reveal">
 
       <ul class="timeline__list reveal">
         <li class="timeline__item">
@@ -112,22 +117,23 @@
     <div class="container">
       <p class="section__eyebrow reveal">Process</p>
       <h2 class="section__title reveal">How I Work</h2>
+      <hr class="gold-rule reveal">
       
       <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: var(--space-6); margin-top: var(--space-2);" class="reveal-stagger">
         
-        <div style="padding: var(--space-6); background: var(--color-surface); border: 1px solid var(--color-divider); border-radius: var(--radius-lg);">
-          <h3 style="font-family:var(--font-display); font-size:var(--text-lg); margin-bottom: var(--space-2);">Observation</h3>
-          <p style="font-size:var(--text-sm); color:var(--color-text-muted);">Everything starts with looking closely. I study light, form, and texture in everyday objects and moments before picking up any tools.</p>
+        <div class="process-card">
+          <h3>Observation</h3>
+          <p>Everything starts with looking closely. I study light, form, and texture in everyday objects and moments before picking up any tools.</p>
         </div>
 
-        <div style="padding: var(--space-6); background: var(--color-surface); border: 1px solid var(--color-divider); border-radius: var(--radius-lg);">
-          <h3 style="font-family:var(--font-display); font-size:var(--text-lg); margin-bottom: var(--space-2);">Experimentation</h3>
-          <p style="font-size:var(--text-sm); color:var(--color-text-muted);">I try new materials, combine unexpected mediums, and let happy accidents guide the work. Some of my best pieces started as mistakes.</p>
+        <div class="process-card">
+          <h3>Experimentation</h3>
+          <p>I try new materials, combine unexpected mediums, and let happy accidents guide the work. Some of my best pieces started as mistakes.</p>
         </div>
 
-        <div style="padding: var(--space-6); background: var(--color-surface); border: 1px solid var(--color-divider); border-radius: var(--radius-lg);">
-          <h3 style="font-family:var(--font-display); font-size:var(--text-lg); margin-bottom: var(--space-2);">Reflection</h3>
-          <p style="font-size:var(--text-sm); color:var(--color-text-muted);">After creating, I step back and ask: what is this piece saying? What worked? What would I do differently? Growth comes from honest self-assessment.</p>
+        <div class="process-card">
+          <h3>Reflection</h3>
+          <p>After creating, I step back and ask: what is this piece saying? What worked? What would I do differently? Growth comes from honest self-assessment.</p>
         </div>
 
       </div>
