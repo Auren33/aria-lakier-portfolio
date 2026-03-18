@@ -10,6 +10,7 @@
   
   // Default to dark mode (matches the dark botanical aesthetic)
   let d = 'dark';
+  try { const s = localStorage.getItem('aria-theme'); if (s) d = s; } catch(e) {}
   r.setAttribute('data-theme', d);
   updateToggleIcon();
 
@@ -17,6 +18,7 @@
     t.addEventListener('click', () => {
       d = d === 'dark' ? 'light' : 'dark';
       r.setAttribute('data-theme', d);
+      try { localStorage.setItem('aria-theme', d); } catch(e) {}
       t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
       updateToggleIcon();
     });
