@@ -9,9 +9,7 @@
   const r = document.documentElement;
   
   // Default to dark mode (matches the dark botanical aesthetic)
-  // Only use light if user has explicitly set it before
-  const stored = localStorage.getItem('aria-theme');
-  let d = stored ? stored : 'dark';
+  let d = 'dark';
   r.setAttribute('data-theme', d);
   updateToggleIcon();
 
@@ -19,7 +17,6 @@
     t.addEventListener('click', () => {
       d = d === 'dark' ? 'light' : 'dark';
       r.setAttribute('data-theme', d);
-      localStorage.setItem('aria-theme', d);
       t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
       updateToggleIcon();
     });
